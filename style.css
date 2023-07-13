@@ -1,0 +1,350 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+html{
+    font-family: 'Russo One', sans-serif;
+}
+.img{
+    width: 100%;
+}
+.img{
+    width: 100%;
+}
+
+body{
+    
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    /* background-color: #fff; */
+    background-color: #1E205F;
+    background-image: url(./img/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.flex{
+    display: flex;
+}
+.block{
+    display: block;
+}
+.list-none{
+    list-style: none;
+}
+.align-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.gap-1{
+    gap: 1rem;
+}
+.gap-1-5{
+    gap: 24px;
+}
+.gap-2{
+    gap: 2rem;
+}
+/* nav bar  */
+.navbar-content{
+    padding: 10px 0;
+}
+.navbar{
+    gap: 32px;
+}
+.navbar a.active{
+    color: #fff;
+}
+.navbar a{
+    font-family: 'Russo One', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #969AC9;
+    transition: 0.4s ease-in;
+}
+.navbar a:hover{
+    color: #fff;
+}
+.nav-btn a{
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    padding: 15px 25px;
+    background-color: red;
+    border-radius: 50px;
+    border: 1px solid #B190FE ;
+    background: none;
+    transition: 0.4s ease-in;
+}
+.nav-btn a:hover{
+    background-color: #B190FE;
+    color: #fff;
+}
+
+/* hero section start  */
+.hero-right-content img{
+    width: 100%;
+}
+.hero-heading h1{
+    font-size: 70px;
+    line-height: 82px;
+    color: #fff;
+}
+.hero-heading h1 .heading-span{
+    /* color: linear-gradient(98.62deg, #FFB72B 1.13%, #F0AE30 51.73%, #FFDB96 99.27%); */
+    color: #6937FE;
+    
+}
+.hero-heading p{
+    font-size: 15px;
+    line-height: 29px;
+    color: #969AC9;
+    margin: 20px 0;
+}
+.hero-btn{
+    margin-top: 20px;
+    gap: 24px;
+}
+.hero-content{
+    flex-direction: row;
+}
+.hero-btn{
+    flex-direction: row;
+}
+.hero-main-btn a{
+    font-size: 18px;
+    line-height: 28px;
+    padding: 15px 20px;
+    color: #fff;
+    background: linear-gradient(98.62deg, #6937FE 1.13%, #B190FE 99.27%);
+    border-radius: 50px;
+    transition: 0.4s ease-in;
+}
+.hero-main-btn a:hover{
+    background: linear-gradient(98.62deg, #B190FE 1.13%, #6937FE 99.27%);
+}
+.hero-online-link a{
+    padding-left: 10px;
+}
+.hero-bottom-text{
+    gap: 24px;
+}
+.hero-bottom-text h2{
+    font-size: 32px;
+    line-height: 40px;
+    color: #ffffff;
+}
+.hero-bottom-text{
+    margin-top: 50px;
+}
+
+/* cart section start  */
+.cart-content{
+    padding: 0 0 28px 0;
+    flex-direction: row;
+}
+
+.cart-1{
+    /* padding: 15px 15px 15px 10px; */
+    padding: 25px;
+    background-color: #222477;
+    border-radius: 14px;
+}
+.cart-2{
+    /* padding: 15px 15px 15px 10px; */
+    padding: 25px;
+    background-color: #222477;
+    border-radius: 14px;
+}
+.cart-3{
+    /* padding: 15px 15px 15px 10px; */
+    padding: 25px;
+    background-color: #222477;
+    border-radius: 14px;
+}
+.cart-text h2{
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+}
+.cart-text p{
+    font-size: 13px;
+    line-height: 23px;
+    color: #969AC9;
+}
+
+
+/* responsive start  */
+
+/* navbar responsive  */
+@media (max-width: 992px){
+    .navbar{
+        gap: 20px;
+    }
+}
+@media (max-width: 768px){
+    .navbar{
+        display: none;
+    }
+}
+
+/* hero section responsive  */
+@media (max-width: 1030px){
+    .hero-heading h1{
+        font-size: 60px;
+        line-height: 72px;
+        
+    }
+    .hero-heading p{
+        font-size: 14px;
+        line-height: 24px;
+        margin: 20px 0;
+    }
+    .hero-btn{
+        margin-top: 20px;
+        gap: 16px;
+    }
+    .hero-bottom-text h2{
+            font-size: 22px;
+            line-height: 33px;
+    }
+    .hero-bottom-text {
+        margin-top: 30px;
+    }
+    .hero-heading p {
+        margin: 11px 0;
+    }
+}
+
+@media (max-width: 1130px){
+    .hero-heading h1{
+        font-size: 60px;
+        line-height: 72px;
+        
+    }
+    .hero-heading p{
+        font-size: 14px;
+        line-height: 24px;
+        margin: 20px 0;
+    }
+    .hero-btn{
+        margin-top: 20px;
+        gap: 16px;
+    }
+    .hero-bottom-text h2{
+            font-size: 22px;
+            line-height: 33px;
+    }
+    .hero-bottom-text {
+        margin-top: 30px;
+    }
+    .hero-heading p {
+        margin: 11px 0;
+    }
+}
+
+@media (max-width: 993px){
+    .hero-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .hero-heading h1{
+        font-size: 40px;
+        line-height: 52px;
+        
+    }
+    .hero-heading p{
+        font-size: 10px;
+        line-height: 20px;
+        margin: 10px 0;
+    }
+    .hero-btn{
+        margin-top: 20px;
+        gap: 16px;
+    }
+    .hero-bottom-text h2{
+            font-size: 16px;
+            line-height: 26px;
+    }
+    .hero-bottom-text {
+        margin-top: 12px;
+    }
+    .hero-heading p {
+        margin: 11px 0;
+    }
+    .hero-btn{
+        flex-direction: column;
+        gap: 2rem;
+        margin-right: 100px;
+    }
+    .hero-main-btn a{
+        font-size: 15px;
+        line-height: 25px;
+        padding: 15px 20px;
+    }
+    .hero-bottom-text{
+        gap: 14px;
+    }
+    .cart-content{
+        flex-direction: column;
+    }
+}
+@media (max-width:907px){
+    .hero-content{
+        flex-direction: column;
+    }
+}
+
+/* crt responsive  */
+@media (max-width:1150px){
+    .cart-1{
+        padding: 15px;
+    }
+    .cart-2{
+        padding: 15px;
+    }
+    .cart-3{
+        padding: 15px;
+    }
+    .cart-text h2{
+        font-size: 16px;
+        line-height: 26px;
+       
+    }
+    .cart-text p{
+        font-size: 10px;
+        line-height: 20px;
+        
+    }
+}
+@media (max-width:567px){
+    .nav-btn a {
+        font-size: 10px;
+        line-height: 20px;
+        padding: 11px 12px;
+
+    }
+}
